@@ -1,7 +1,7 @@
 {
   "author": "Yuki Akiyama <you2197901 [at] gmail.com>",
   "name": "crawler.io",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "dependencies": {
     "limit-request-promise" : "0.0.7"
@@ -10,6 +10,7 @@
   "description": "crawler util",
   "main": "index.js",
   "devDependencies": {
+    "cheerio" : "",
     "bluebird" : "",
     "mocha" : "",
     "power-assert" : ""
