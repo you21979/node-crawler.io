@@ -1,31 +1,4 @@
-# node-crawler.io
-
-web crawler i/o
-
-## install
-
-```
-npm install crawler.io
-```
-
-## example
-
-### Simple Usage
-
-```
-var CookieSession = require('crawler.io').CookieSession;
-var c = new CookieSession("UserAgent : (I am a Bot.)");
-c.get('http://www.yahoo.co.jp/').then(function(res){
-    console.log(res)
-}).catch(function(err){
-    console.log("err")
-})
-```
-
-### Login Session
-
-```
-var CookieSession = require('crawler.io').CookieSession;
+var CookieSession = require('..').CookieSession;
 var c = new CookieSession("UserAgent : (I am a Bot.)");
 
 var loginParam = {
@@ -45,16 +18,3 @@ c.get('https://www.hatena.ne.jp/').then(function(res){
 }).catch(function(err){
     console.log("err")
 })
-```
-
-command
-
-```
-ID=username PASS=password node login.js
-```
-
-
-## license
-
-MIT
-
