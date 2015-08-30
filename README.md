@@ -34,7 +34,7 @@ var loginParam = {
 };
 
 c.get('https://www.hatena.ne.jp/').then(function(res){
-    return c.postLogin('https://www.hatena.ne.jp/login', loginParam).then(function(res){
+    return c.post('https://www.hatena.ne.jp/login', loginParam).then(function(res){
         if( res.match(/が違います/) ){
             throw new Error('login error');
         }
